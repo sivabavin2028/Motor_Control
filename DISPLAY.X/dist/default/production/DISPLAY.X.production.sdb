@@ -1,0 +1,529 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F886 ]
+[d frameptr 0 ]
+"46 D:\Bavin\practice\DISPLAY.X\main.c
+[e E1366 . `uc
+MODE_STARTUP 0
+MODE_IDLE 1
+MODE_SET_CURRENT 2
+MODE_SET_VOLTAGE 3
+MODE_RUN 4
+]
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"43 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"97 D:\Bavin\practice\DISPLAY.X\main.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"113
+[v _readAdc readAdc `(ui  1 e 2 0 ]
+"128
+[v _gpio_conf gpio_conf `(v  1 e 1 0 ]
+"159
+[v _timer_conf timer_conf `(v  1 e 1 0 ]
+"215
+[v _splitFloat splitFloat `(v  1 e 1 0 ]
+"244
+[v _custom_display custom_display `(v  1 e 1 0 ]
+"268
+[v _ISR ISR `II(v  1 e 1 0 ]
+"315
+[v _motor_stop motor_stop `(v  1 e 1 0 ]
+"321
+[v _motor_forward motor_forward `(v  1 e 1 0 ]
+"329
+[v _motor_reverse motor_reverse `(v  1 e 1 0 ]
+"337
+[v _getVoltage getVoltage `(f  1 e 4 0 ]
+"352
+[v _getAmps getAmps `(f  1 e 4 0 ]
+"369
+[v _main main `(v  1 e 1 0 ]
+"53 D:\Bavin\practice\DISPLAY.X/BCD.h
+[v _SS1_BCD SS1_BCD `[10]i  1 e 20 0 ]
+"54
+[v _SS2_BCD SS2_BCD `[10]i  1 e 20 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f886.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S166 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"403
+[s S175 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S180 . 1 `S166 1 . 1 0 `S175 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES180  1 e 1 @11 ]
+"578
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"585
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"592
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"1159
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1166
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S69 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1197
+[s S74 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S83 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S86 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S89 . 1 `S69 1 . 1 0 `S74 1 . 1 0 `S83 1 . 1 0 `S86 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES89  1 e 1 @31 ]
+"1267
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+[s S31 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1354
+[u S40 . 1 `S31 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES40  1 e 1 @133 ]
+"1399
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S126 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1478
+[u S135 . 1 `S126 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES135  1 e 1 @135 ]
+"2812
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S54 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2833
+[u S60 . 1 `S54 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES60  1 e 1 @159 ]
+"3229
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3273
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3418
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"3715
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3724
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
+"3859
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"3910
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"3913
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"3916
+[v _RA6 RA6 `VEb  1 e 0 @46 ]
+"3919
+[v _RA7 RA7 `VEb  1 e 0 @47 ]
+"3952
+[v _RC0 RC0 `VEb  1 e 0 @56 ]
+"3955
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"3958
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"3961
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"3964
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"3967
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"3970
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"3973
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"4147
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"4156
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"4159
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"46 D:\Bavin\practice\DISPLAY.X\main.c
+[v _mode mode `E1366  1 e 1 0 ]
+[s S28 . 8 `f 1 voltage 4 0 `[4]uc 1 display 4 4 ]
+"53
+[v _modes modes `[3]S28  1 e 24 0 ]
+"60
+[v _current_limit current_limit `f  1 e 4 0 ]
+"61
+[v _v_index v_index `uc  1 e 1 0 ]
+"62
+[v _selected_voltage selected_voltage `f  1 e 4 0 ]
+"63
+[v _selected_index selected_index `uc  1 e 1 0 ]
+"64
+[v _voltage2 voltage2 `f  1 e 4 0 ]
+"66
+[v _counter_pwm counter_pwm `VEui  1 e 2 0 ]
+"67
+[v _duty duty `VEui  1 e 2 0 ]
+"68
+[v _stage stage `uc  1 s 1 stage ]
+"71
+[v _last_up last_up `uc  1 e 1 0 ]
+"72
+[v _last_down last_down `uc  1 e 1 0 ]
+"75
+[v _outputOk outputOk `a  1 e 1 0 ]
+"77
+[v _ts1 ts1 `VEuc  1 e 1 0 ]
+"78
+[v _ts2 ts2 `VEuc  1 e 1 0 ]
+"79
+[v _ts3 ts3 `VEuc  1 e 1 0 ]
+"80
+[v _ts4 ts4 `VEuc  1 e 1 0 ]
+"82
+[v _tar_vol tar_vol `f  1 e 4 0 ]
+"83
+[v _ref_vol ref_vol `f  1 e 4 0 ]
+"85
+[v _direction direction `VEuc  1 e 1 0 ]
+"87
+[v _limit_mode limit_mode `VEuc  1 e 1 0 ]
+"88
+[v _limit_step limit_step `VEuc  1 e 1 0 ]
+"369
+[v _main main `(v  1 e 1 0 ]
+{
+"630
+[v main@error error `f  1 a 4 70 ]
+"392
+[v main@system_done system_done `uc  1 a 1 74 ]
+"391
+[v main@limit_active limit_active `uc  1 a 1 69 ]
+"389
+[v main@startup_mode startup_mode `uc  1 a 1 68 ]
+"390
+[v main@prev_limit prev_limit `uc  1 s 1 prev_limit ]
+"397
+[v main@set_state set_state `uc  1 s 1 set_state ]
+"460
+[v main@toggle toggle `uc  1 s 1 toggle ]
+"559
+[v main@relay_state relay_state `uc  1 s 1 relay_state ]
+"631
+[v main@stopped stopped `uc  1 s 1 stopped ]
+"659
+} 0
+"159
+[v _timer_conf timer_conf `(v  1 e 1 0 ]
+{
+"180
+} 0
+"215
+[v _splitFloat splitFloat `(v  1 e 1 0 ]
+{
+"233
+[v splitFloat@mv_ten_297 mv_ten `i  1 a 2 12 ]
+"232
+[v splitFloat@mv_hun_296 mv_hun `i  1 a 2 10 ]
+"230
+[v splitFloat@v_one_295 v_one `i  1 a 2 8 ]
+"229
+[v splitFloat@v_ten v_ten `i  1 a 2 6 ]
+"221
+[v splitFloat@mv_ten mv_ten `i  1 a 2 4 ]
+"220
+[v splitFloat@mv_hun mv_hun `i  1 a 2 2 ]
+"219
+[v splitFloat@v_one v_one `i  1 a 2 0 ]
+"215
+[v splitFloat@val val `f  1 p 4 55 ]
+[v splitFloat@d_1000 d_1000 `*.5uc  1 p 1 59 ]
+[v splitFloat@d_100 d_100 `*.5uc  1 p 1 60 ]
+[v splitFloat@d_10 d_10 `*.5uc  1 p 1 61 ]
+[v splitFloat@d_1 d_1 `*.5uc  1 p 1 62 ]
+"240
+} 0
+"43 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 28 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 20 ]
+"70
+} 0
+"242 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 44 ]
+[v ___flsub@b b `d  1 p 4 48 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 19 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 18 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 17 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 16 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 43 ]
+[v ___flge@ff2 ff2 `d  1 p 4 47 ]
+"19
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 79 ]
+[v ___awmod@counter counter `uc  1 a 1 78 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 36 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 35 ]
+[v ___awdiv@counter counter `uc  1 a 1 34 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 30 ]
+[v ___awdiv@dividend dividend `i  1 p 2 32 ]
+"41
+} 0
+"315 D:\Bavin\practice\DISPLAY.X\main.c
+[v _motor_stop motor_stop `(v  1 e 1 0 ]
+{
+"319
+} 0
+"329
+[v _motor_reverse motor_reverse `(v  1 e 1 0 ]
+{
+"335
+} 0
+"321
+[v _motor_forward motor_forward `(v  1 e 1 0 ]
+{
+"327
+} 0
+"128
+[v _gpio_conf gpio_conf `(v  1 e 1 0 ]
+{
+"156
+} 0
+"337
+[v _getVoltage getVoltage `(f  1 e 4 0 ]
+{
+[v getVoltage@ch ch `uc  1 p 1 wreg ]
+"341
+[v getVoltage@i i `i  1 a 2 41 ]
+"339
+[v getVoltage@sum sum `ul  1 a 4 37 ]
+"347
+[v getVoltage@adc adc `ui  1 a 2 34 ]
+"337
+[v getVoltage@ch ch `uc  1 p 1 wreg ]
+"339
+[v getVoltage@ch ch `uc  1 p 1 36 ]
+"350
+} 1
+"352
+[v _getAmps getAmps `(f  1 e 4 0 ]
+{
+[v getAmps@ch ch `uc  1 p 1 wreg ]
+"356
+[v getAmps@i i `i  1 a 2 41 ]
+"354
+[v getAmps@sum sum `ul  1 a 4 37 ]
+"362
+[v getAmps@adc adc `ui  1 a 2 34 ]
+"352
+[v getAmps@ch ch `uc  1 p 1 wreg ]
+"354
+[v getAmps@ch ch `uc  1 p 1 36 ]
+"365
+} 1
+"113
+[v _readAdc readAdc `(ui  1 e 2 0 ]
+{
+[v readAdc@ch ch `uc  1 p 1 wreg ]
+[v readAdc@ch ch `uc  1 p 1 wreg ]
+"115
+[v readAdc@ch ch `uc  1 p 1 3 ]
+"125
+} 1
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 40 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 39 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 30 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 38 ]
+"44
+} 1
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S622 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S627 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S630 . 4 `l 1 i 4 0 `d 1 f 4 0 `S622 1 fAsBytes 4 0 `S627 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S630  1 a 4 72 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 66 ]
+[s S699 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S702 . 2 `s 1 i 2 0 `us 1 n 2 0 `S699 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S702  1 a 2 76 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 71 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 70 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 65 ]
+"8
+[v ___flmul@b b `d  1 p 4 52 ]
+[v ___flmul@a a `d  1 p 4 56 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 8 ]
+"60
+} 1
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 20 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 13 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 18 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 25 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 24 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 17 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"97 D:\Bavin\practice\DISPLAY.X\main.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"111
+} 0
+"268
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"290
+[v ISR@s1 s1 `uc  1 s 1 s1 ]
+"291
+[v ISR@s2 s2 `uc  1 s 1 s2 ]
+"292
+[v ISR@s3 s3 `uc  1 s 1 s3 ]
+"293
+[v ISR@s4 s4 `uc  1 s 1 s4 ]
+"308
+} 0
+"244
+[v _custom_display custom_display `(v  1 e 1 0 ]
+{
+[v custom_display@one one `uc  1 p 1 wreg ]
+[v custom_display@one one `uc  1 p 1 wreg ]
+[v custom_display@two two `uc  1 p 1 0 ]
+[v custom_display@three three `uc  1 p 1 1 ]
+[v custom_display@four four `uc  1 p 1 2 ]
+"246
+[v custom_display@one one `uc  1 p 1 5 ]
+"265
+} 1

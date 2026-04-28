@@ -1,0 +1,54 @@
+#define SS1_A 0XFA
+#define SS1_b 0X3E
+#define SS1_G 0X6E
+#define SS1_t 0X3C
+#define SS1_L 0X2C
+#define SS1_V 0XAE
+#define SS1_S 0X76
+#define SS1_o 0X1E
+#define SS1_n 0X1A
+#define SS1_R 0XFA
+#define SS1_r 0X18
+#define SS1_H 0XBA
+#define SS1_F 0X78
+#define SS1_C 0X6C
+#define SS1_P 0XF8
+#define SS1_d 0x9E
+#define SS1_W 0xA4
+#define SS1_i 0X01
+#define SS1_DOT 0x01
+
+#define SS2_V 0X57
+#define SS2_P 0XF8
+#define SS2_C 0X6C
+#define SS2_d 0X9E
+#define SS2_A 0XF5
+#define SS2_E 0XE3
+#define SS2_F 0XE1
+#define SS2_o 0X87
+#define SS2_r 0X81
+#define SS2_L 0X43
+#define SS2_U 0X57
+#define SS2_I 0X14
+#define SS2_u 0X07
+#define SS2_H 0XD5
+#define SS2_K 0X94
+
+#define SS4_o 0X87
+#define SS4_R 0XF5
+#define SS4_C 0X63
+#define SS4_t 0XC3
+#define SS4_F 0XE1
+#define SS4_P 0XF1
+#define SS4_L 0X43
+#define SS4_H 0XD5
+#define SS4_d 0x97
+#define SS4_G 0x67
+#define SS4_r 0X81
+#define SS4_E SS2_E
+#define SS2_DOT 0x08
+#define OFF 0x00
+
+
+int SS1_BCD[] ={0XEE,0X82,0XDC,0XD6,0XB2,0X76,0X3E,0XC2,0XFE,0XF2};
+int SS2_BCD[] ={0X77,0X14,0XB3,0XB6,0XD4,0XE6,0XC7,0X34,0XF7,0XF4};
